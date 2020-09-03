@@ -17,7 +17,7 @@ public class Calculator {
 
     public double division(int a, int b) {
         if (b != 0) {
-            return a / b;
+            return (float)(a / b);
         } else return 0;
     }
 }
