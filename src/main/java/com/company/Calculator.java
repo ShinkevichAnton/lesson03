@@ -1,5 +1,7 @@
 package com.company;
 
+import java.math.BigInteger;
+
 public class Calculator {
     public int add(int a, int b) {
         return a + b;
@@ -9,12 +11,13 @@ public class Calculator {
         return a - b;
     }
 
-    public long multiply(int a, int b) {
-        return a * b;
+    public BigInteger multiply(int a, int b) {
+        return new BigInteger(String.valueOf(a * b));
     }
 
     public double division(int a, int b) {
-
-        return a / b;
+        if (b != 0) {
+            return a / b;
+        } else return 0;
     }
 }
