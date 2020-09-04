@@ -11,13 +11,14 @@ public class Calculator {
         return a - b;
     }
 
-    public BigInteger multiply(int a, int b) {
-        return new BigInteger(String.valueOf(a * b));
+    public long multiply(int a, int b) {
+        long c = a * b;
+        return c;
     }
 
     public double division(int a, int b) {
         if (b != 0) {
-            return (float)(a / b);
+            return (double) a / b;
         } else return 0;
     }
 }

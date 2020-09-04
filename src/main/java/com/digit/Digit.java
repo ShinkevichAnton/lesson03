@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class Digit {
-    public static void main(String[] args) {
+    public void game(){
         Random newRandom = new Random();
         int randomNumber = newRandom.nextInt(5);
         System.out.println("Введите число от 1 до 5:");
